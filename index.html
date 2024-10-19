@@ -53,7 +53,8 @@
         #mainDialog {
             width: 350px;
             margin: 0;
-            background-color: #101010;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
             color: #ffffff;
             text-align: center;
             padding: 20px;
@@ -117,7 +118,10 @@
             display: none;
             color: red;
         }
-
+        #success {
+            display: none;
+            color: green;
+        }
         #arrow {
             transition: transform 0.3s ease;
             display: inline-block;
@@ -142,6 +146,7 @@
                     <div>
                         <span id="messageWrapper">
                             <span id="invalidPass" class="error">Incorrect Password.</span>
+                            <span id="success" class="notifyText">Success!</span>
                         </span>
                         <button id="submitPass" type="button">Go <span id="arrow">&rarr;</span></button>
                     </div>
@@ -158,6 +163,7 @@
             var passEl = document.getElementById('pass');
             var invalidPassEl = document.getElementById('invalidPass');
             var trycatcherror = document.getElementById('trycatcherror');
+            var successEl = document.getElementById('success');
             var contentFrame = document.getElementById('contentFrame');
 
             // Sanity checks
@@ -267,9 +273,10 @@
 
                     contentFrame.srcdoc = decrypted;
 
+                    successEl.style.display = "inline";
                     setTimeout(function () {
                         pwdArea.style.display = "none";
-                    }, 100);
+                    }, 400);
                 } catch (e) {
                     invalidPassEl.style.display = "inline";
                     passEl.value = "";
