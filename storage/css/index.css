@@ -6,7 +6,7 @@ body {
     font-family: var(--font-family);
     display: flex;
     background-color: var(--background-color); 
-    animation: mainHeaderAnimation 2s forwards;
+    animation: mainHeaderAnimation 1s forwards;
     
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -223,12 +223,10 @@ a {
   
 @keyframes mainHeaderAnimation {
     0% {
-        opacity: 0;
-        transform: translateY(-25%);
+        filter: blur(10px);
     }
     100% {
-        opacity: 1;
-        transform: translateY(0%);
+        filter: blur(0px);
     }
 }
   
