@@ -1,4 +1,13 @@
 {
+    "nettsim/index.html": {
+        "files": [
+            "/games/nettsim/index.html",
+            "/games/nettsim/index.js",
+            "/games/nettsim/index.pck",
+            "/games/nettsim/index.wasm"
+        ],
+        "thumbnail": "/images/thumbnails/nettsim.jpg"
+    },
     "slope/index.html": {
         "files": [
             "/games/slope/UnityLoader.js",
