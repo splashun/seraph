@@ -8,6 +8,16 @@
         ],
         "thumbnail": "/images/thumbnails/nettsim.jpg"
     },
+    "nimrods/index.html": {
+        "files": [
+            "/games/nimrods/index.html",
+            "/games/nimrods/loader.js",
+            "/games/nimrods/game.wasm.gz",
+            "/games/nimrods/game.data.gz",
+            "/games/nimrods/framework.js.gz"
+        ],
+        "thumbnail": "/images/thumbnails/nimrods.jpg"
+    },
     "slope/index.html": {
         "files": [
             "/games/slope/UnityLoader.js",
