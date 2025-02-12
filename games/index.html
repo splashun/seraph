@@ -92,8 +92,43 @@
             </div>
         </a>
 
+        <a href="roblox/index.html" id="robloxLink">
+            <div class="button" style="background-image: url('../images/thumbnails/roblox.jpg');"
+                data-genre="simulation">
+                <h2>roblox</h2>
+                <span class="pin-button"><img src="/images/other/star.png" width="25px" height="25px"></span>
+            </div>
+        </a>
+
+        <script>// Get the specific link element by ID
+            document.getElementById('robloxLink').addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Request fullscreen before redirecting
+                const handleFullscreen = () => {
+                    window.location.href = 'roblox/index.html';
+                };
+
+                // Check for fullscreen support
+                if (document.body.requestFullscreen) {
+                    document.body.requestFullscreen().then(handleFullscreen);
+                } else if (document.body.mozRequestFullScreen) {
+                    document.body.mozRequestFullScreen().then(handleFullscreen);
+                } else if (document.body.webkitRequestFullscreen) {
+                    document.body.webkitRequestFullscreen().then(handleFullscreen);
+                } else if (document.body.msRequestFullscreen) {
+                    document.body.msRequestFullscreen().then(handleFullscreen);
+                } else {
+                    // Fallback if fullscreen is not supported
+                    window.location.href = 'roblox/index.html';
+                }
+            });
+
+        </script>
+
         <a target="_blank" href="nimrods/index.html">
-            <div class="button" style="background-image: url('../images/thumbnails/nimrods.jpg');" data-genre="simulation">
+            <div class="button" style="background-image: url('../images/thumbnails/nimrods.jpg');"
+                data-genre="simulation">
                 <h2>nimrods</h2>
                 <span class="pin-button"><img src="/images/other/star.png" width="25px" height="25px"></span>
                 <span class="download-button"><img src="/images/other/download.png" width="25px" height="25px"></span>
@@ -101,21 +136,24 @@
         </a>
 
         <a target="_blank" href="blockblast/index.html">
-            <div class="button" style="background-image: url('../images/thumbnails/blockblast.jpg');" data-genre="puzzle">
+            <div class="button" style="background-image: url('../images/thumbnails/blockblast.jpg');"
+                data-genre="puzzle">
                 <h2>block blast</h2>
                 <span class="pin-button"><img src="/images/other/star.png" width="25px" height="25px"></span>
             </div>
         </a>
 
         <a target="_blank" href="feedvidlive/index.html">
-            <div class="button" style="background-image: url('../images/thumbnails/feedvidlive.jpg');" data-genre="simulation">
+            <div class="button" style="background-image: url('../images/thumbnails/feedvidlive.jpg');"
+                data-genre="simulation">
                 <h2>feedvid live</h2>
                 <span class="pin-button"><img src="/images/other/star.png" width="25px" height="25px"></span>
             </div>
         </a>
 
         <a target="_blank" href="deepestsword/index.html">
-            <div class="button" style="background-image: url('../images/thumbnails/deepestsword.jpg');" data-genre="platformer">
+            <div class="button" style="background-image: url('../images/thumbnails/deepestsword.jpg');"
+                data-genre="platformer">
                 <h2>deepest sword</h2>
                 <span class="pin-button"><img src="/images/other/star.png" width="25px" height="25px"></span>
             </div>
@@ -127,7 +165,7 @@
                 <span class="pin-button"><img src="/images/other/star.png" width="25px" height="25px"></span>
             </div>
         </a>
-        
+
         <a target="_blank" href="9007199254740992/index.html">
             <div class="button" style="background-image: url('../images/thumbnails/big2048.jpg');" data-genre="puzzle">
                 <h2>big 2048</h2>
@@ -143,14 +181,16 @@
         </a>
 
         <a target="_blank" href="superpickleballadventure/index.html">
-            <div class="button" style="background-image: url('../images/thumbnails/superpickleballadventure.jpg');" data-genre="adventure">
+            <div class="button" style="background-image: url('../images/thumbnails/superpickleballadventure.jpg');"
+                data-genre="adventure">
                 <h2>pickleball adventure</h2>
                 <span class="pin-button"><img src="/images/other/star.png" width="25px" height="25px"></span>
             </div>
         </a>
 
         <a target="_blank" href="nettsim/index.html">
-            <div class="button" style="background-image: url('../images/thumbnails/nettsim.jpg');" data-genre="simulation">
+            <div class="button" style="background-image: url('../images/thumbnails/nettsim.jpg');"
+                data-genre="simulation">
                 <h2>nettspend simulator</h2>
                 <span class="pin-button"><img src="/images/other/star.png" width="25px" height="25px"></span>
                 <span class="download-button"><img src="/images/other/download.png" width="25px" height="25px"></span>
@@ -158,21 +198,24 @@
         </a>
 
         <a target="_blank" href="idlebreakout/index.html">
-            <div class="button" style="background-image: url('../images/thumbnails/idlebreakout.jpg');" data-genre="arcade">
+            <div class="button" style="background-image: url('../images/thumbnails/idlebreakout.jpg');"
+                data-genre="arcade">
                 <h2>idle breakout</h2>
                 <span class="pin-button"><img src="/images/other/star.png" width="25px" height="25px"></span>
             </div>
         </a>
 
         <a target="_blank" href="batterybaby/index.html">
-            <div class="button" style="background-image: url('../images/thumbnails/batteryBaby.jpg');" data-genre="arcade">
+            <div class="button" style="background-image: url('../images/thumbnails/batteryBaby.jpg');"
+                data-genre="arcade">
                 <h2>battery baby</h2>
                 <span class="pin-button"><img src="/images/other/star.png" width="25px" height="25px"></span>
             </div>
         </a>
 
         <a target="_blank" href="3dpinball/index.html">
-            <div class="button" style="background-image: url('../images/thumbnails/3dpinball.jpg');" data-genre="arcade">
+            <div class="button" style="background-image: url('../images/thumbnails/3dpinball.jpg');"
+                data-genre="arcade">
                 <h2>space cadet pinball</h2>
                 <span class="pin-button"><img src="/images/other/star.png" width="25px" height="25px"></span>
             </div>
